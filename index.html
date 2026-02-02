@@ -592,7 +592,9 @@
             }
         };
 
+        // CLEANED AND ORGANIZED LANGUAGE LIST WITH PROPER FLAGS
         const LANGUAGES = [
+            // MAJOR GLOBAL LANGUAGES
             { code: 'en', name: 'English (United States)', flag: '🇺🇸' },
             { code: 'es', name: 'Spanish (Español)', flag: '🇪🇸' },
             { code: 'fr', name: 'French (Français)', flag: '🇫🇷' },
@@ -601,105 +603,95 @@
             { code: 'hi', name: 'Hindi (हिन्दी)', flag: '🇮🇳' },
             { code: 'ar', name: 'Arabic (العربية)', flag: '🇸🇦' },
             { code: 'pt', name: 'Portuguese (Português)', flag: '🇵🇹' },
-            { code: 'bn', name: 'Bengali (বাংলা)', flag: '🇧🇩' },
             { code: 'ru', name: 'Russian (Русский)', flag: '🇷🇺' },
             { code: 'ja', name: 'Japanese (日本語)', flag: '🇯🇵' },
             { code: 'ko', name: 'Korean (한국어)', flag: '🇰🇷' },
-            { code: 'vi', name: 'Vietnamese (Tiếng Việt)', flag: '🇻🇳' },
             { code: 'it', name: 'Italian (Italiano)', flag: '🇮🇹' },
             { code: 'tr', name: 'Turkish (Türkçe)', flag: '🇹🇷' },
-
-            // --- BENELUX (Belgium, Netherlands, Luxembourg) ---
-            { code: 'nl', name: 'Dutch (Nederlands)', flag: '🇳🇱' },
-            { code: 'nl-BE', name: 'Flemish (Vlaams)', flag: '🇧🇪' },
-            { code: 'fr-BE', name: 'Belgian French (Français de Belgique)', flag: '🇧🇪' },
-            { code: 'de-BE', name: 'Belgian German (Belgisches Deutsch)', flag: '🇧🇪' },
-            { code: 'wa', name: 'Walloon (Walon)', flag: '🇧🇪' },
-            { code: 'vls', name: 'West Flemish (West-Vlams)', flag: '🇧🇪' },
-            { code: 'li', name: 'Limburgish (Limburgs)', flag: '🇳🇱' },
-            { code: 'fy', name: 'West Frisian (Frysk)', flag: '🇳🇱' },
-            { code: 'lb', name: 'Luxembourgish (Lëtzebuergesch)', flag: '🇱🇺' },
-
-            // --- FRANCE & REGIONAL ---
-            { code: 'br', name: 'Breton (Brezhoneg)', flag: '🇫🇷' },
-            { code: 'oc', name: 'Occitan (Occitan)', flag: '🇫🇷' },
-            { code: 'co', name: 'Corsican (Corsu)', flag: '🇫🇷' },
-            { code: 'gsw-FR', name: 'Alsatian (Elsässisch)', flag: '🇫🇷' },
-            { code: 'eu', name: 'Basque (Euskara)', flag: '🇪🇸' },
-            { code: 'ca', name: 'Catalan (Català)', flag: '🇪🇸' },
-
-            // --- GERMANY & REGIONAL ---
-            { code: 'nds', name: 'Low German (Plattdeutsch)', flag: '🇩🇪' },
-            { code: 'hsb', name: 'Upper Sorbian (Hornjoserbšćina)', flag: '🇩🇪' },
-            { code: 'dsb', name: 'Lower Sorbian (Dolnoserbšćina)', flag: '🇩🇪' },
-            { code: 'bar', name: 'Bavarian (Boarisch)', flag: '🇩🇪' },
-            { code: 'swg', name: 'Swabian (Schwäबिश)', flag: '🇩🇪' },
-            { code: 'pfl', name: 'Palatine German (Pälzisch)', flag: '🇩🇪' },
-            { code: 'ksh', name: 'Colognian (Kölsch)', flag: '🇩🇪' },
-            { code: 'de-AT', name: 'Austrian German (Österreichisches Deutsch)', flag: '🇦🇹' },
-            { code: 'de-CH', name: 'Swiss German (Schwiizerdütsch)', flag: '🇨🇭' },
-
-            // --- EUROPEAN BROAD ---
+            
+            // OTHER MAJOR LANGUAGES
+            { code: 'bn', name: 'Bengali (বাংলা)', flag: '🇧🇩' },
+            { code: 'vi', name: 'Vietnamese (Tiếng Việt)', flag: '🇻🇳' },
             { code: 'pl', name: 'Polish (Polski)', flag: '🇵🇱' },
             { code: 'uk', name: 'Ukrainian (Українська)', flag: '🇺🇦' },
             { code: 'ro', name: 'Romanian (Română)', flag: '🇷🇴' },
             { code: 'el', name: 'Greek (Ελληνικά)', flag: '🇬🇷' },
             { code: 'cs', name: 'Czech (Čeština)', flag: '🇨🇿' },
             { code: 'hu', name: 'Hungarian (Magyar)', flag: '🇭🇺' },
-            { code: 'sv', name: 'Swedish (Svenska)', flag: '�🇪' },
+            { code: 'sv', name: 'Swedish (Svenska)', flag: '🇸🇪' },
             { code: 'da', name: 'Danish (Dansk)', flag: '🇩🇰' },
             { code: 'no', name: 'Norwegian (Norsk)', flag: '🇳🇴' },
-            { code: 'fi', name: 'Finnish (Suomi)', flag: '�🇫�' },
+            { code: 'fi', name: 'Finnish (Suomi)', flag: '🇫🇮' },
             { code: 'sk', name: 'Slovak (Slovenčina)', flag: '🇸🇰' },
             { code: 'bg', name: 'Bulgarian (Български)', flag: '🇧🇬' },
-            { code: 'hr', name: 'Croatian (Hrvatski)', flag: '🇭�🇷' },
+            { code: 'hr', name: 'Croatian (Hrvatski)', flag: '🇭🇷' },
             { code: 'sr', name: 'Serbian (Српски)', flag: '🇷🇸' },
             { code: 'sl', name: 'Slovenian (Slovenščina)', flag: '🇸🇮' },
+            
+            // BENELUX REGION
+            { code: 'nl', name: 'Dutch (Nederlands)', flag: '🇳🇱' },
+            { code: 'nl-BE', name: 'Flemish (Vlaams)', flag: '🇧🇪' },
+            { code: 'fr-BE', name: 'Belgian French', flag: '🇧🇪' },
+            { code: 'de-BE', name: 'Belgian German', flag: '🇧🇪' },
+            { code: 'vls', name: 'West Flemish', flag: '🇧🇪' },
+            { code: 'lb', name: 'Luxembourgish', flag: '🇱🇺' },
+            
+            // FRENCH REGIONAL
+            { code: 'br', name: 'Breton (Brezhoneg)', flag: '🇫🇷' },
+            { code: 'co', name: 'Corsican (Corsu)', flag: '🇫🇷' },
+            { code: 'eu', name: 'Basque (Euskara)', flag: '🇪🇸' },
+            { code: 'ca', name: 'Catalan (Català)', flag: '🇪🇸' },
+            
+            // GERMAN REGIONAL
+            { code: 'de-AT', name: 'Austrian German', flag: '🇦🇹' },
+            { code: 'de-CH', name: 'Swiss German', flag: '🇨🇭' },
+            
+            // OTHER EUROPEAN
             { code: 'lt', name: 'Lithuanian (Lietuvių)', flag: '🇱🇹' },
             { code: 'lv', name: 'Latvian (Latviešu)', flag: '🇱🇻' },
             { code: 'et', name: 'Estonian (Eesti)', flag: '🇪🇪' },
-            { code: 'is', name: 'Icelandic (Íسلenska)', flag: '🇮🇸' },
+            { code: 'is', name: 'Icelandic (Íslenska)', flag: '🇮🇸' },
             { code: 'ga', name: 'Irish (Gaeilge)', flag: '🇮🇪' },
-            { code: 'cy', name: 'Welsh (Cymraeg)', flag: '🇬🇧' },
+            { code: 'cy', name: 'Welsh (Cymraeg)', flag: '🏴󠁧󠁢󠁷󠁬󠁳󠁿' },
             { code: 'gd', name: 'Scottish Gaelic (Gàidhlig)', flag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿' },
             { code: 'sq', name: 'Albanian (Shqip)', flag: '🇦🇱' },
             { code: 'mk', name: 'Macedonian (Македонски)', flag: '🇲🇰' },
             { code: 'mt', name: 'Maltese (Malti)', flag: '🇲🇹' },
-
-            // --- ASIA & PACIFIC ---
+            
+            // SOUTH ASIAN LANGUAGES
+            { code: 'ta', name: 'Tamil (தமிழ்)', flag: '🇮🇳' },
+            { code: 'te', name: 'Telugu (తెలుగు)', flag: '🇮🇳' },
+            { code: 'mr', name: 'Marathi (मराठी)', flag: '🇮🇳' },
+            { code: 'gu', name: 'Gujarati (ગુજરાતી)', flag: '🇮🇳' },
+            { code: 'kn', name: 'Kannada (ಕನ್ನಡ)', flag: '🇮🇳' },
+            { code: 'ml', name: 'Malayalam (മലയാളം)', flag: '🇮🇳' },
+            { code: 'pa', name: 'Punjabi (ਪੰਜਾਬੀ)', flag: '🇮🇳' },
+            { code: 'or', name: 'Odia (ଓଡ଼ିଆ)', flag: '🇮🇳' },
+            
+            // SOUTHEAST ASIAN LANGUAGES
             { code: 'th', name: 'Thai (ไทย)', flag: '🇹🇭' },
             { code: 'id', name: 'Indonesian (Bahasa Indonesia)', flag: '🇮🇩' },
             { code: 'ms', name: 'Malay (Bahasa Melayu)', flag: '🇲🇾' },
             { code: 'tl', name: 'Tagalog (Filipino)', flag: '🇵🇭' },
-            { code: 'pa', name: 'Punjabi (ਪੰਜਾਬੀ)', flag: '🇮🇳' },
-            { code: 'te', name: 'Telugu (తెలుగు)', flag: '🇮🇳' },
-            { code: 'mr', name: 'Marathi (मराठी)', flag: '🇮🇳' },
-            { code: 'ta', name: 'Tamil (தமிழ்)', flag: '🇮🇳' },
-            { code: 'gu', name: 'Gujarati (ગુજરાતી)', flag: '🇮🇳' },
-            { code: 'kn', name: 'Kannada (ਕನ್ನಡ)', flag: '🇮🇳' },
-            { code: 'ml', name: 'Malayalam (മലയാളം)', flag: '🇮🇳' },
-            { code: 'my', name: 'Burmese (မြันမာစာ)', flag: '🇲🇲' },
+            { code: 'my', name: 'Burmese (မြန်မာစာ)', flag: '🇲🇲' },
             { code: 'km', name: 'Khmer (ខ្មែរ)', flag: '🇰🇭' },
-            { code: 'lo', name: 'Lao (ลาว)', flag: '🇱🇦' },
-            { code: 'si', name: 'Sinhala (සිංහල)', flag: '🇱🇰' },
-            { code: 'ne', name: 'Nepali (नेपाली)', flag: '🇳🇵' },
-
-            // --- AFRICA ---
+            { code: 'lo', name: 'Lao (ລາວ)', flag: '🇱🇦' },
+            
+            // AFRICAN LANGUAGES
             { code: 'sw', name: 'Swahili (Kiswahili)', flag: '🇹🇿' },
             { code: 'am', name: 'Amharic (አማርኛ)', flag: '🇪🇹' },
             { code: 'yo', name: 'Yoruba (Yorùbá)', flag: '🇳🇬' },
-            { code: 'ig', name: 'Igbo (Asụsụ Igbo)', flag: '🇳🇬' },
+            { code: 'ig', name: 'Igbo', flag: '🇳🇬' },
             { code: 'zu', name: 'Zulu (isiZulu)', flag: '🇿🇦' },
             { code: 'xh', name: 'Xhosa (isiXhosa)', flag: '🇿🇦' },
             { code: 'af', name: 'Afrikaans', flag: '🇿🇦' },
-            { code: 'ha', name: 'Hausa (هَوْਸَ)', flag: '🇳🇬' },
+            { code: 'ha', name: 'Hausa', flag: '🇳🇬' },
             { code: 'so', name: 'Somali (Soomaali)', flag: '🇸🇴' },
-
-            // --- AMERICAS ---
-            { code: 'qu', name: 'Quechua (Runa Simi)', flag: '🇵🇪' },
-            { code: 'ay', name: 'Aymara', flag: '🇧🇴' },
-            { code: 'gn', name: 'Guarani (Avañe\'ẽ)', flag: '🇵🇾' },
-            { code: 'ht', name: 'Haitian Creole (Kreyòl ayisyen)', flag: '🇭🇹' }
+            
+            // AMERICAN LANGUAGES
+            { code: 'qu', name: 'Quechua', flag: '🇵🇪' },
+            { code: 'gn', name: 'Guarani', flag: '🇵🇾' },
+            { code: 'ht', name: 'Haitian Creole', flag: '🇭🇹' }
         ];
 
         class SuccesApp {
